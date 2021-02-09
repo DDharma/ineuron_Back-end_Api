@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,render_template
 from flask_cors import CORS,cross_origin
 
 app = Flask(__name__)

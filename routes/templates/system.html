@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>School Management System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/CSS/home.css">
+<link rel="stylesheet" href="static/CSS/system.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button">ineuron.ai</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="http://127.0.0.1:5000/system.html" class="w3-bar-item w3-button">System</a>
+      <a href="http://127.0.0.1:5000/mentor.html" class="w3-bar-item w3-button">Mentor</a>
+      <a href="http://127.0.0.1:5000/about.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="#login" class="w3-bar-item w3-button"><img src="static/img/login_1.png" alt="LogIn"></a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1366px">
+  <div class="system_dahboard">
+    <div class="searchbar-mainbutton">
+;      <div class="main_button">
+        <input id="ME_Button" type="image" src="static/img/ButtonME.png" name="submit" width="150" height="50" alt="submit"/>
+
+        <input id="CSE_Button" type="image" src="static/img/ButtonCSE.png" name="submit" width="150" height="50" alt="submit"/> 
+        
+        <input id="CIVIL_Button" type="image" src="static/img/Buttoncivil.png" name="submit" width="150" height="50" alt="submit"/>
+        
+        <input id="add_new_Button" type="image" src="static/img/addnew.png" name="submit" width="150" height="50" alt="submit"/>
+        <!-- Showing this thing After Click-->
+        <div id="addNewItem" style="display: none;">
+          <input id="add_new_student" type="image" src="static/img/Button CTA.png" name="submit" width="150" height="50" alt="submit"/>
+
+          <input id="add_new_batch_time" type="image" src="static/img/addtime-tabl.png" name="submit" width="150" height="50" alt="submit"/>
+        </div>
+        
+        <input id="Update_Button" type="image" src="static/img/UPDATE.png" name="submit" width="150" height="50" alt="submit"/>
+        
+        <div class="search_bar">
+          <form class="example">
+            <input type="text" placeholder="Search By Student ID.." name="search" id="searchBar">
+
+            <button type="submit"><i class="fa fa-search" id="search_button"></i></button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="grapg-performance">
+      <div class="float-container">
+        <div class="float-child">
+          <div class="top_performer">
+            <h6 class="student_heading">TOP PERFORMER</h6>
+            <p id="toperMe">STUDENT HAVING HIGHEST MARKS IN ME STUDENT1</p>
+            <p id="toperCse">STUDENT HAVING HIGHEST MARKS IN ME STUDENT1</p>
+            <p id="topercivil">STUDENT HAVING HIGHEST MARKS IN ME STUDENT1</p>
+          </div>
+          
+        </div>
+  
+        <div class="float-child">
+          <div class="performance_grph" style="width: 40%;">
+            <h6 class="student_heading">STUDENT STATSTICS </h6>
+            <img class="graph" src="static/img//illustration.png" />
+            <input class="batch-time" id="batchTime" type="image" src="static/img/Button batch_timing.png" name="submit" width="150" height="50" alt="submit"/> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data after api call -->
+  <div class="showing_data">
+    <h5 class="dataShowringHeading" id="dataShowringHeadingId" >Nothing is selected to show</h5>
+    <div class="showBatchTime" id="showBatchTimeId"></div>
+    <div class="showAllBatch" id="showAllBatchId"></div>
+    <div class="showStudentNames" id="showStudentNamesId"></div>
+    <div class="showStudentData" id="showStudentDataId"></div>
+
+    <!--Adding New Things-->
+    <div class="addNewStudent" id="addNewStudentId" style="display: none;
+    ">
+        <form class="addStudentform">
+          <input type="text" placeholder="Name"  height="50" name="Name" id="StudentName">
+
+          <input type="text" placeholder="StudentId"  height="50" name="Id" id="StudentId">
+
+          <input type="text" placeholder="Branch"  height="50" name="Branch" id="StudentBranch">
+                    
+          <input type="text" placeholder="Batch"  height="50" name="Batch" id="StudentBatch">          
+          
+          <input id="submit_button" type="image" src="static/img/submit (2).png" name="submit" width="150" height="30" alt="submit"/>
+
+        </form>
+    </div>
+
+    <div class="addNewBatchTime" id="addNewBatchTimeid" style="display: none;"></div>
+    
+</div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://ineuron.ai/" title="ineuron.ai" target="_blank" class="w3-hover-text-green">ineuron.ai</a></p>
+</footer>
+</body>
+<script src="static/JS/system.js"></script>
+</html>

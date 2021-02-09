@@ -1,10 +1,7 @@
-from routes import app,request,cross_origin
+from routes import app,request,cross_origin,render_template
 from modules.connection import sql_connection
 
 
-@app.route("/")
-def hello():
-    return "Hello ineuron"
 
 @app.route("/add_student",methods=["POST"])
 @cross_origin()
@@ -270,3 +267,15 @@ def topper():
         return str(e)
     return studentTopperData
 
+
+#All the api which render the HTML all the html Files
+#For home page
+@app.route("/")
+@cross_origin()
+def index():
+    return render_template("index.html")
+
+@app.route("/system.html")
+@cross_origin()
+def system():
+    return render_template("system.html")    

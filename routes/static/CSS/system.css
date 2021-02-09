@@ -1,0 +1,111 @@
+.system_dahboard {
+    margin-top: 80px;
+    padding-top: 5%;
+    height: 500px;
+    background-color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: black ;
+}
+
+.main_button {
+    vertical-align: middle;
+    margin-left: 3%;
+    padding-right: 30px;
+}
+
+.main_button input{
+    box-shadow: 6px 6px 29px -4px #888888;
+}
+
+
+#add_new_Button {
+    position: relative;
+}
+
+#addNewItem {
+    position: absolute;
+    margin-left: 200px;
+
+}
+
+.search_bar {
+    float: right;
+    margin-right: 16%;
+    box-shadow: 6px 6px 29px -4px #888888;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.grapg-performance {
+    margin-left: 3%;
+    font-weight: 800;
+    color: #EC8810;
+    
+}
+
+.performance_grph {
+    text-align: center;
+}
+
+.batch-time {
+    margin-top: 15px;
+    box-shadow: 6px 6px 29px -4px #888888;
+}
+
+.graph {
+    border-radius: 110px;
+    box-shadow: 6px 6px 29px -4px #888888;
+}
+
+.top_performer {
+    margin-right: 90px;
+    text-align: center;
+    height: 250px;
+    border: 2px;
+    border-style: solid;
+    border-color:  #EC8810 ;
+
+}   
+
+/** Data show after selection**/
+.showing_data {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

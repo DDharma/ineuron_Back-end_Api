@@ -8,13 +8,16 @@ def sql_connection():
         [Object]: [Object of database connection -- mysql.connector.connect]
     """
     try:
+        
+        #AWS RDS Database
         mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Dharmvir@#123",
+        host="ineurondatabase.ce2qr5zgmenf.us-east-2.rds.amazonaws.com",
+        user="admin",
+        password="qwertyuiop",
         database = "ineuron"
     )
-        print("koshishmemberandattendencedetails - Database is connected")
+      
+        print("ineuron - Database is connected")
         print("Data_base connected")
         return mydb
 
