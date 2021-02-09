@@ -278,4 +278,14 @@ def index():
 @app.route("/system.html")
 @cross_origin()
 def system():
-    return render_template("system.html")    
+    return render_template("system.html")
+
+@app.route("/mentor.html")
+@cross_origin()
+def system():
+    return render_template("mentor.html")
+
+@app.route("/about.html")
+@cross_origin()
+def system():
+    return render_template("about.html")
