@@ -1,5 +1,5 @@
-var url = "http://127.0.0.1:5000/"
-//var url = "https://4fd3c872c61b.ngrok.io/"
+//var url = "http://127.0.0.1:5000/"
+var url = "https://ineuron-student.herokuapp.com/"
 
 //Toper
 var ourRequestTopper = new XMLHttpRequest();
