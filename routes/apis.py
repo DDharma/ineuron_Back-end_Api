@@ -282,10 +282,10 @@ def system():
 
 @app.route("/mentor.html")
 @cross_origin()
-def system():
+def mentor():
     return render_template("mentor.html")
 
 @app.route("/about.html")
 @cross_origin()
-def system():
+def about():
     return render_template("about.html")
